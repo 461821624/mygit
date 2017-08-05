@@ -1,0 +1,344 @@
+#header {
+    margin-bottom: 20px;
+}
+.member_header {
+    font-size: 14px;
+    height: 146px;
+    line-height: 146px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.c_gray_3 {
+    color: #333;
+}
+.member_nav_left {
+    background: url(../img/logo_02.png) no-repeat;
+    width: 160px;
+    height: 65px;
+    margin-top: 39px;
+}
+.float_l {
+    float: left;
+    display: inline;
+}
+.float_r {
+    float: right;
+    display: inline;
+}
+.member_nav_right div {
+    float: left;
+    position: relative;
+}
+.member_help {
+    left: -38px;
+}
+.member_nav_right div {
+    float: left;
+    position: relative;
+}
+.member_phone {
+    top: 63px;
+    left: -23px;
+}
+
+.hico01 {
+    background-position: 0 0;
+    left:-26px;
+}
+
+.hico01, .hico02, .hico04 {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/headico.png) no-repeat;
+    position: absolute;
+}
+.clear {
+    clear: both;
+}
+.headerShadow {
+    background: url(../img/headerbg.png) 0 bottom repeat-x;
+    width: 100%;
+    height: 8px;
+}
+.memberMain {
+
+    background: #fbfbfb;
+    position: relative;
+    height: 535px;
+    background: #fefefe url(../img/memberbg.jpg) center 0 no-repeat;
+}
+.login_form {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    margin-left: 150px;
+    width: 298px;
+    background: #fff;
+    padding: 30px 40px;
+    background: #fff;
+    border: solid 1px #e8e8e8;
+    box-shadow: 3px 3px 7px #eee;
+}
+.member_title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+.member_li {
+    border: solid 1px #e8e8e8;
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 4px 0;
+}
+.memberico01, .memberico02, .memberico03, .memberico04 {
+    width: 26px;
+    height: 26px;
+    padding-right: 4px;
+    background: url(../img/memberico.gif) no-repeat;
+    margin: 0 4px 0 6px;
+    border-right: solid 1px #e8e8e8;
+}
+.memberint {
+    width: 240px;
+    margin: 0 0 0 4px;
+    position: relative;
+}
+
+.float_l {
+    float: left;
+    display: inline;
+}
+.memberint input {
+    width: 100%;
+    padding: 0;
+    border: none;
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    color: #333;
+    outline: none;
+}
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: ".";
+    visibility: hidden;
+    height: 0;
+}
+.memberico02 {
+    background-position: -26px 0;
+}
+.member_form_btn button {
+    width: 100%;
+    height: 48px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-family: "微软雅黑";
+}
+.men_err_msg {
+    height: 30px;
+    color: #cc3d3d;
+}
+.m_t {
+    text-align: center;
+    margin: 25px 0 15px 0;
+}
+a.acclink {
+    color: #669aca;
+}
+.mask, .mask_a {
+    width: 100%;
+    height: 100%;
+    display: none;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #000;
+    filter: alpha(opacity=50);
+    opacity: .50;
+    z-index: 110;
+}
+
+
+.pw_footer {
+    background: #414141;
+    width: 100%;
+    height: 280px;
+    min-width: 1200px;
+}
+.pw_footer_top ul {
+    height: 138px;
+    line-height: 138px;
+    color: white;
+    width: 1200px;
+    margin: 0 auto;
+    background: #414141;
+}
+.pw_footer_top ul li {
+    float: left;
+    font-size: 18px;
+}
+.pw_footer_top ul li .footer_icon03 {
+    background-position: right;
+}
+.pw_footer_top ul li div {
+    position: relative;
+    top: 42px;
+    margin-right: 24px;
+    float: left;
+    width: 52px;
+    height: 52px;
+    background: url(../img/footer_icon.png) center;
+}
+.pw_footer_top ul .pw_footer_m {
+    width: 765px;
+    text-align: center;
+    position: relative;
+    left: 28px;
+}
+.pw_footer_top ul .pw_footer_m div {
+    position: relative;
+    left: 299px;
+}
+.pw_footer_top ul li .footer_icon02 {
+    background-position: -52px 0;
+}
+.pw_footer_top ul li .footer_icon01 {
+    background-position: left;
+}
+.pw_footer_top ul li div {
+    position: relative;
+    top: 42px;
+    margin-right: 24px;
+    float: left;
+    width: 52px;
+    height: 52px;
+    background: url(../img/footer_icon.png) center;
+}
+.pw_footer_top ul li {
+    float: left;
+    font-size: 18px;
+}
+.pw_footer_cut {
+    width: 100%;
+    height: 0;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #4d4d4d;
+}
+.pw_footer_btm {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+    background: #414141;
+}
+.pw_footer_btm_l {
+    position: relative;
+    left: -10px;
+}
+.float_l {
+    float: left;
+    display: inline;
+    font-size: 100%;
+    font-weight: normal;
+    font-style: normal;  
+}
+.pw_footer_btm_l ul li {
+    text-align: center;
+    float: left;
+    height: 20px;
+    width: 72px;
+    border-left: 1px solid #999;
+    line-height: 20px;
+}
+.pw_footer_btm_l ul a, .pw_footer_btm {
+    color: #999;
+}
+.pw_footer_btm_l div {
+    padding-left: 12px;
+}
+.pw_footer_btm_l p {
+    line-height: 47px;
+}
+.pw_footer_btm_l span {
+    margin-right: 20px;
+}
+.footer_btm_cut {
+    margin: 5px 1px 0 170px;
+    height: 86px;
+    border-right: 1px solid #333;
+    border-left: 1px solid #4d4d4d;
+}
+.float_r {
+    float: right;
+    display: inline;
+}
+.pw_footer_btm_r div {
+    text-align: center;
+    margin: 5px 0 23px;
+}
+.pw_footer_btm_r div span {
+    font-size: 14px;
+}
+.pw_footer_btm_r ul li {
+    float: left;
+    padding: 0 17px;
+}
+.partner_01 a {
+    width: 18px;
+    height: 20px;
+    background: url(../img/partner_icon.png);
+    background-position: 0 0;
+}
+
+
+/*hover: .partner_01 a {
+    width: 18px;
+    height: 20px;
+    background: url(../img/footer_h.png);
+    background-position: 0 0;
+}*/
+
+
+.pw_footer_btm_r a {
+    display: block;
+    color: #999;
+}
+.partner_03 a {
+    font-style: italic;
+}
+.partner_03 a span {
+    float: left;
+    width: 31px;
+    height: 19px;
+    background: url(../img/partner_icon.png);
+    background-position: -199px 0;
+}
+.partner_02 a {
+    width: 68px;
+    height: 22px;
+    background: url(../img/footer.png);
+    background-position: 0 -24px;
+}
+.partner_04 a {
+    width: 72px;
+    height: 31px;
+    background: url(../img/partner_icon.png);
+    background-position: -127px 0;
+}
+.partner_05 a {
+    width: 60px;
+    height: 23px;
+    background: url(../img/partner_icon.png);
+    background-position: -66px 0;
+}
+.partner_06 a {
+    width: 77px;
+    height: 23px;
+    background: url(../img/footer.png);
+    background-position: -77px -23px;
+}

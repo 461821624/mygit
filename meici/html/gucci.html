@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-3.1.1.min.js"></script>
+		<script src="../js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/ajax.js"></script> 
+		<script src="../js/move.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/shopGucci.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/yourlike.js"></script>
+		<script src="../js/subscribe.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/addcart.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/reuse.css" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/product.css" />
+		<script src="../js/fdj2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			onload=function(){
+				Shop();
+				fdj();
+				AddCart();
+				like();
+				Subscribe();
+				onscroll=function(){
+					
+					
+//------------------------------吸顶------------------------------	
+					var partner4=document.getElementsByClassName('partner4')[0];
+					var t = document.documentElement.scrollTop || document.body.scrollTop;
+					var oServe=document.getElementsByClassName('serve')[0];
+					var oServe2=document.getElementsByClassName('serve2')[0];
+					console.log(t)
+					if (t>=840) {
+						oServe.style.position='fixed';
+						oServe.style.top='0px'
+//						oServe.style.left='0px'
+						oServe.style.margin=0;
+						oServe2.style.display='block';
+					}
+					if (t<840) {
+						oServe.style.position='relative';
+						oServe.style.top=''
+//						oServe.style.left='0px'
+						oServe.style.margin="";
+						oServe2.style.display='none'
+
+					}
+//-----------------------------------------------------------------------------
+					partner4.onclick=function(){
+					var timerID = 0;
+					clearInterval(timerID)
+					//缓冲运动
+					timerID = setInterval(function(){
+						
+					//先获取当前的位置
+					var current = document.documentElement.scrollTop || document.body.scrollTop;
+					var speed =  -current / 10;
+					document.documentElement.scrollTop = document.body		.scrollTop = current + speed ;
+					if(current == 0){
+						clearInterval(timerID);
+					}
+					
+				},30)
+					
+				}
+
+				}
+				
+		var share=document.getElementsByClassName('share')[0];	
+		var share_1=document.getElementsByClassName('share_1')[0];
+		console.log(share_1)
+		share.onmouseout=function(){
+				share_1.style.display='none';
+		}
+		share.onmouseover=function(){
+				share_1.style.display='block';
+		}
+		share_1.onmouseout=function(){
+				share_1.style.display='none';
+		}
+		share_1.onmouseover=function(){
+				share_1.style.display='block';
+		}
+		
+//		---------------------------微信扫一扫--------------------------------------
+		var bd_weixin_popup_close=document.getElementsByClassName('bd_weixin_popup_close')[0];
+		var saoyisao=document.getElementById('saoyisao');
+		var share_1=document.getElementsByClassName('share_1')[0];
+		var weixin_share=share_1.getElementsByTagName('button')[0];
+		console.log(share)
+		weixin_share.onclick=function(){
+			saoyisao.style.display='block'
+		}
+		bd_weixin_popup_close.onclick=function(){
+			saoyisao.style.display='none'
+		}
+} 
+//----------------------------------------------------------
+				
+				
+			
+		</script>
+	</head>
+
+	<body>
+		<div id="mask">
+		
+		</div>
+			<div id="showMsg1">
+				<div class="ac_box_tit"><span>温馨提示</span>
+					<div class="close_btn">╳</div>
+				</div>
+				<div class="ac_box_msg">请填写您的E-mail</div>
+				<div class="ac_btn_box">
+					<a class="ab_btn01" href="javascript:void(0);">确认</a>
+				</div>
+			</div>
+		<div id="header">
+			<div class="header_inner">
+
+				<div class="header_innerLeft">
+					<div class="header_innerLeft_1">
+						<span class="header_phone"></span>
+						<span class="header_phonenum">4000-250-630</span>
+					</div>
+					<div class="header_innerLeft_2">
+						<span class="header_phone2"></span>
+						<span class="header_down">下载美西APP</span>
+					</div>
+				</div>
+				<div class="header_innerRight">
+					<div class="header_user">
+						<span class="header_user_1"><a href="login.html" title="登录">登录</a></span>
+						<span class="header_user_2"><a href="register.html" title="注册">注册</a></span>
+					</div>
+					<div class="header_shop">
+						<span class="header_shop_1"></span>
+						<span class="header_shop_2">购物袋（0）</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="middle">
+			<div class="middle_inner">
+				<div class="download_app_1">
+					<img src="../img/down_app.png" />
+					<p>扫码下载</p>
+					<div class="download_app_2">
+
+					</div>
+				</div>
+				<div class="middle_logo">
+					<img src="../img/logo.png" />
+				</div>
+				<div class="middle_search">
+					<input type="text" name="" id="" value="" placeholder="请输入关键字" />
+					<button class="middle_search_2"></button>
+				</div>
+			</div>
+		</div>
+		<div id="header_nav">
+			<!--<div class="subNav">
+							
+			</div>-->
+			<div class="header_nav_inner">
+				<ul>
+					<li>
+						<a href="../index.html">首页</a>
+
+					</li>
+					<li>
+						<a href="">新近单品</a>
+
+					</li>
+					<li>
+						<a href="">全球购</a>
+					</li>
+					<li>
+						<a href="">女士</a>
+					</li>
+					<li>
+						<a href="">男士</a>
+					</li>
+					<li>
+						<a href="">童装</a>
+					</li>
+					<li>
+						<a href="">腕表</a>
+					</li>
+					<li>
+						<a href="">品牌</a>
+					</li>
+					<li>
+						<a href="">特惠</a>
+					</li>
+					<li>
+						<a href="">Mzine</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="headerShadow">
+
+		</div>
+		<!------------------------------------------------------------------->
+		
+		<div id="main">
+			<div class="main_inner">
+				<!--商品展示-->
+				<div class="goods">
+					<!--商品缩略图-->
+					<div class="img_list">
+						<div class="prev">
+							
+						</div>
+						<ul id="list_img">
+							<li><img src="../img/h-120414-1.jpg"/></li>
+							<li><img src="../img/h-120414-2.jpg"/></li>
+							<!--<li><img src="../img/h-109350-3.jpg"/></li>
+							<li><img src="../img/h-109350-4.jpg"/></li>
+							<li><img src="../img/h-109350-5.jpg"/></li>-->
+						</ul>
+						<div class="next">
+							
+						</div>
+					</div>
+					<div class="shop">
+						<img src="../img/h-120414-1.jpg"/>
+						<div id="fdj"></div>
+
+				
+					</div>
+					<div class="big_img">
+						<img src="../img/h-120414-1.jpg"/>
+					</div>
+					
+				<div class="shoptitle">
+					<!--商品名及标题-->
+					<!--<h1><a href="product.html " style="color: #000000;">Gucci 古驰</a></h1>
+					<p>探险家型II系列 精钢 男仕 机械表</p>
+					<div class="pic">
+						<span>￥</span><span>50080.00</span>
+					</div>-->
+					</div>
+                    <div class="size">
+                    	<span>颜色</span><span></span>
+                    </div>
+                   
+                    <div class="but_list">
+                    	<button class="buy">立即购买</button>
+	                    <button class="cur">加入购物车</button>
+	                    <button class="collect"></button>
+	                    <button class="share"></button>
+                    </div>
+                    <div class="share_1">
+                    	<span></span>
+                    	<button></button>
+                    	<button></button>
+                    	<button></button>
+                    </div>
+                    <div class="sj">
+                    	<ul>
+                    		<li>到货时间</li>
+                    		<li>该商品到货时间预计15-20个工作日,具体时间受海关放行效率影响。</li>
+                    	</ul>
+                    </div>
+				</div>
+				
+				</div>
+				<div class="serv">
+					
+					
+					<div class="serve">
+					<ul id="serve_1">
+						<li class="active">商品详情</li>
+						<li>配送及售后</li>
+					</ul>
+					
+					<ul class="serve2">
+						<li>即可购买</li>
+						<li>加入购物袋</li>
+					</ul>
+			</div>
+			</div>
+			<!--</div>-->
+			<!--<div class="serve">
+				<!--<ul id="serve_1">
+					<li class="active">商品详情</li>
+					<li>配送及售后</li>
+				</ul>-->
+			<!--</div>-->
+			<div id="product_con">
+        <div class="tabCon" style="display:block;">
+            <div class="tabCon_m">
+                <div class="pro_pubtit">
+                    <div class="tabTitle">
+                        <div class="tabTitle_m">Product <span>Information</span></div>
+                        <p>商品信息</p>
+                    </div>
+                </div>
+                <div class="proTableinfo">
+                    <table class="proTable" width="100%">
+                        <colgroup>
+                            <col width="70px"><col width="195px"><col width="70px"><col width="195px"><col width="70px"><col width="195px"><col width="70px"><col width="195px">
+                        </colgroup>
+                        <tbody><tr>
+                            <th>美西编号</th><td class="product_sku">120414</td>
+                            <th>货　　号</th><td>406408K5P1T8860_252</td>
+                            <th>产　　地</th><td>-</td>
+                            <th>年　　份</th><td>2017</td>
+                        </tr>
+                        <tr>
+                            <th>适用人群</th><td>男士</td>
+                            <th>颜　　色</th><td class="product_color">经典</td>
+                            <th>季　　节</th><td>-</td>
+                            <th>系　　列</th><td>-</td>
+                        </tr>
+                        <tr><th>材　　质</th><td colspan="7">PVC</td></tr>
+                        <tr>
+                            <th style="border:none;" valign="top"><div>商品描述</div></th>
+                            <td colspan="7" style="border:none;" valign="top">
+                                <div style="width: 100%;word-break:break-all;padding-top: 16px;">
+                                  -                              </div>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </div>
+            </div>
+
+            <div class="tabCon_m">
+                <div class="pro_pubtit">
+                    <div class="tabTitle">
+                        <div class="tabTitle_m">Brand <span>Story</span></div>
+                        <p>品牌故事</p>
+                    </div>
+                </div>
+                <div class="brand_story">
+                    <table width="100%">
+                        <tbody><tr>
+                            <td>
+                                <div class="proBrand_l">
+                                    <p>由Guccio Gucci创立的GUCCI王国于1921年创建于意大利的佛罗伦萨，产品涵盖服装、皮包皮鞋、手表、家饰品、宠物用品、丝巾与领带，更在1975年推出古驰香水产品。GUCCI一直以生产高档豪华的产品著名。无论是鞋、包还是服装，都以“身份与财富之象征”品牌形象成为富有的上流社会的消费宠儿。从40年代末到60年代，GUCCI接连推出了带竹柄的皮包、镶金属袢的软鞋、印花丝巾等一系列的经典设计，其产品的独特设计和优良材料，成为典雅和奢华的象征。</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="proBrand_r">
+                                    <div class="proBrand_r_line"></div>
+                                    <img src="../img/13.jpg">
+                                    <a class="moreBrandCon" href="/brands/detail/id/64.html" target="_blank" onclick="_hmt.push(['_trackEvent', '商品详细页', '查看更多品牌商品', 'Rolex 劳力士']);">查看更多品牌商品</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </div>
+
+            </div>
+
+            <div class="tabCon_m">
+                <div class="pro_pubtit">
+                    <div class="tabTitle">
+                        <div class="tabTitle_m">Product <span>Details</span></div>
+                        <p>商品详情</p>
+                    </div>
+                </div>
+                <div class="proImg">
+                    <ul class="clearfix">
+                    	<li><img src="../img/h-120414-1.jpg" width="485"></li>
+                    	<li><img src="../img/h-120414-1.jpg" width="485"></li>
+                    	<!--<li><img src="../img/h-109350-3.jpg" width="485"></li>
+                    	<li><img src="../img/h-109350-4.jpg" width="485"></li>
+                    	<li><img src="../img/h-109350-5.jpg" width="485"></li>-->
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+         
+         <div class="pro_hty">
+    <div class="pro_pubtit">
+        <div class="tabTitle">
+            <div class="tabTitle_m">Guess Your Like</div>
+            <p>猜你喜欢</p>
+        </div>
+    </div>
+    <div id="GuessLike">
+    	<div class="cnxh">
+        	<ul id="cnxh">
+        		
+        	</ul>
+        </div>
+        <div class="like_prev"><img src="../img/pre_btn.png"/></div>
+        <div class="like_next"><img src="../img/next_btn.png"/></div>
+        
+    </div>
+
+</div>
+    </div>
+
+</div>
+
+		
+		<!------------------------------------------------------------------->
+	
+		<div id="footer">
+			<div class="footer_inner">
+				</div>
+		
+			<div class="p_footer">
+				<div class="p_footer_c clearfix">
+					<div class="help_intro clearfix">
+						<ul>
+							<li class="footer_t">购物指南</li>
+							<li>
+								<a href="/services/shoppingGuide.html" title="购物流程" target="_blank">购物流程</a>
+							</li>
+							<li>
+								<a href="/services/shipping.html" title="配送方式" target="_blank">配送方式</a>
+							</li>
+						</ul>
+						<ul>
+							<li class="footer_t">支付方式</li>
+							<li>
+								<a href="/services/payOnline.html" title="如何付款" target="_blank">如何付款</a>
+							</li>
+							<li>
+								<a href="/services/receipt.html" title="发票制度" target="_blank">发票制度</a>
+							</li>
+						</ul>
+						<ul>
+							<li class="footer_t">商品说明</li>
+							<li>
+								<a href="/services/clothSize.html" title="商品尺码" target="_blank">商品尺码</a>
+							</li>
+							<li>
+								<a href="/services/Packing.html" title="商品包装" target="_blank">商品包装</a>
+							</li>
+						</ul>
+						<ul>
+							<li class="footer_t">客服中心</li>
+							<li>
+								<a href="/services/service.html" title="七天退换" target="_blank">七天退换</a>
+							</li>
+							<li>
+								<a href="/services/FAQ.html" title="常见问题" target="_blank">常见问题</a>
+							</li>
+						</ul>
+					</div>
+					<div class="service_phone">
+						<span class="footer_t">客服电话</span>
+						<h5>4000-250-630</h5>
+						<p>工作日 08:30-21:30</p>
+						<p>节假日 10:00-18:00</p>
+					</div>
+					<div class="foot_subscription">
+						<p class="foot_subscription_t">订阅美西杂志</p>
+						<input class="foot_subscription_m" id="rssIn" type="text" value="" placeholder="E-mail">
+						<div class="foot_subscription_b" onclick="subscriber(); _hmt.push(['_trackEvent', '公共底部', '点击', '订阅邮件']);
+		">即刻订阅</div>
+					</div>
+					<div class="download_main">
+						<div class="float_l download_app">
+							<span class="footer_t">美西APP</span>
+							<div><span class="app_img"></span></div>
+						</div>
+						<div class="float_r wechat">
+							<span class="footer_t">官方微信</span>
+							<div>
+								<span class="wechat_img"></span>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<p>手机扫码即可下载美西APP或关注官方微信 </p>
+					</div>
+				</div>
+
+			</div>
+			<div class="pw_footer">
+				<div class="pw_footer_top">
+					<ul>
+						<li>
+							<div class="footer_icon03"></div>
+							<span>100%正品保证</span>
+						</li>
+						<li class="pw_footer_m">
+							<div class="footer_icon02">
+
+							</div>
+							<span>7天无忧退货</span>
+						</li>
+						<li>
+							<div class="footer_icon01"></div>
+							<span>九年专注，品质保障</span>
+						</li>
+					</ul>
+				</div>
+				<div class="pw_footer_cut"></div>
+				<div class="pw_footer_btm clearfix">
+					<div class="float_l pw_footer_btm_l">
+						<ul>
+							<li style="border-left: none;">
+								<a href="/services/media.html" title="媒体报道" target="_blank">媒体报道</a>
+							</li>
+							<li>
+								<a href="/services/qualityAssurance.html" title="正品保证" target="_blank">正品保证</a>
+							</li>
+							<li>
+								<a href="/services/coop.html" title="业务合作" target="_blank">业务合作</a>
+							</li>
+							<li>
+								<a href="/services/privacy.html" title="隐私声明" target="_blank">隐私声明</a>
+							</li>
+							<li>
+								<a href="/services/join.html" title="加入美西" target="_blank">加入美西</a>
+							</li>
+							<li>
+								<a href="/services/contacts.html" title="联系我们" target="_blank">联系我们</a>
+							</li>
+						</ul>
+						<div class="clear"></div>
+						<div>
+							<p>Copyright ©2008-2017，美西-高端时尚生活电商</p>
+						</div>
+						<div><span>沪ICP备09001221号</span><span>沪公网安备11010802017116号</span></div>
+					</div>
+					<div class="footer_btm_cut float_l"></div>
+					<div class="float_r pw_footer_btm_r">
+						<div><span>合作支持</span></div>
+						<ul class="clearfix">
+							<li class="partner_01" style="padding-top:5px;">
+								<a href="https://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=dov73ne26zbqpz06h12ypxbndnhhch3lzn" target="_blank"></a>
+							</li>
+							<li class="partner_03" style="padding-top:6px;">
+								<a class="clearfix" href="http://cn.unionpay.com" target="_blank"><span style="margin-right: 4px;"></span><i class="float_l">银联特约商户</i></a>
+							</li>
+							<li class="partner_02" style="padding-top:5px;">
+								<a href="http://v.qq.com/fashion/" target="_blank"></a>
+							</li>
+							<li class="partner_04">
+								<a href="http://d1.sina.com.cn/minisite/meixi/index.html" target="_blank"></a>
+							</li>
+							<li class="partner_05" style="padding-top:4px;">
+								<a href="http://women.sohu.com/20090318/n262873311.shtml" target="_blank"></a>
+							</li>
+							<li class="partner_06" style="padding-right: 0;padding-top: 4px;">
+								<a href="http://www.haibao.com" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!------------------------------------------>
+		<div class="consult">
+			<ul class="clearfix">
+				<li class="partner1" style="padding-top:5px;">
+					<a href="javascript:;"></a>
+					<div class="ewm">
+						<img src="../img/down_app.png"/>
+						<span id="fuhao"></span>
+					</div>
+				</li>
+				<li class="partner2" style="padding-top:6px;">
+					<a class="clearfix" href="javascript:;"></a>
+				</li>
+				<li class="partner3" style="padding-top:5px;">
+					<a href="http://wpa.qq.com/msgrd?v=3&uin=461821624&site=qq&menu=yes" target="_blank"></a>
+				</li>
+				<li class="partner4">
+					<a href="javascript:;" target="_blank"></a>
+				</li>
+				
+			</ul>
+		</div>
+		<div id="saoyisao">
+			<div class="weixin_header">
+				<span>分享到微信朋友圈</span>
+				<a href="javascript:;" onclick="return false;" class="bd_weixin_popup_close">×</a>
+			</div>
+			<div class="weixin_bg">
+				<img src="../img/1501205162.png"/>
+			</div>
+			<div class="bd_weixin_popup_foot">
+				打开微信，点击底部的“发现”，<br>使用“扫一扫”即可将网页分享至朋友圈。
+			</div>
+		</div>
+	</body>
+
+</html>

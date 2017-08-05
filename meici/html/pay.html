@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/ajax.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/move.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/lunbo3.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			onload = function() {
+					lunbo_3();
+				
+					onscroll = function() {
+
+						//------------------------------吸顶------------------------------	
+						var partner4 = document.getElementsByClassName('partner4')[0];
+
+						//-----------------------------------------------------------------------------
+						partner4.onclick = function() {
+							var timerID = 0;
+							clearInterval(timerID)
+							//缓冲运动
+							timerID = setInterval(function() {
+
+								//先获取当前的位置
+								var current = document.documentElement.scrollTop || document.body.scrollTop;
+								var speed = -current / 10;
+								document.documentElement.scrollTop = document.body.scrollTop = current + speed;
+								if(current == 0) {
+									clearInterval(timerID);
+								}
+
+							}, 30)
+
+						}
+
+					}
+
+
+			
+					}
+					
+		</script>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/reuse.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/pay.css"/>
+	</head>
+	<body>
+		<div id="mask">
+		
+		</div>
+			<div id="showMsg1">
+				<div class="ac_box_tit"><span>温馨提示</span>
+					<div class="close_btn">╳</div>
+				</div>
+				<div class="ac_box_msg">请填写您的E-mail</div>
+				<div class="ac_btn_box">
+					<a class="ab_btn01" href="javascript:void(0);">确认</a>
+				</div>
+			</div>
+		<div id="header">
+			<div class="header_inner">
+
+				<div class="header_innerLeft">
+					<div class="header_innerLeft_1">
+						<span class="header_phone"></span>
+						<span class="header_phonenum">4000-250-630</span>
+					</div>
+					<div class="header_innerLeft_2">
+						<span class="header_phone2"></span>
+						<span class="header_down">下载美西APP</span>
+					</div>
+				</div>
+				<div class="header_innerRight">
+					<div class="header_user">
+						<span class="header_user_1"><a href="html/login.html" title="登录">登录</a></span>
+						<span class="header_user_2"><a href="html/register.html" title="注册">注册</a></span>
+					</div>
+					<div class="header_shop">
+						<span class="header_shop_1"></span>
+						<span class="header_shop_2">购物袋（0）</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="middle">
+			<div class="middle_inner">
+				<div class="download_app_1">
+					<img src="img/down_app.png" />
+					<p>扫码下载</p>
+					<div class="download_app_2">
+
+					</div>
+				</div>
+				<div class="middle_logo">
+					<img src="../img/logo.png" />
+				</div>
+				<div class="middle_search">
+					<input type="text" name="" id="" value="" placeholder="请输入关键字" />
+					<button class="middle_search_2"></button>
+				</div>
+			</div>
+		</div>
+		<div id="header_nav">
+			<!--<div class="subNav">
+							
+			</div>-->
+			<div class="header_nav_inner">
+				<ul>
+					<li>
+						<a href="">首页</a>
+
+					</li>
+					<li>
+						<a href="html/goodslist.html">新近单品</a>
+
+					</li>
+					<li>
+						<a href="html/goodslist.html">全球购</a>
+					</li>
+					<li>
+						<a href="html/goodslist.html">女士</a>
+					</li>
+					<li>
+						<a href="html/goodslist.html">男士</a>
+					</li>
+					<li>
+						<a href="">童装</a>
+					</li>
+					<li>
+						<a href="">腕表</a>
+					</li>
+					<li>
+						<a href="">品牌</a>
+					</li>
+					<li>
+						<a href="">特惠</a>
+					</li>
+					<li>
+						<a href="">Mzine</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="headerShadow">
+
+		</div>
+		<!-----------------------------内容------------------------>
+		<div id="main">
+			<div class="content">
+				<div></div>
+				<div class="youlike">
+					<div class="pro_pubtit">
+						<div class="tabTitle">
+							<div class="tabTitle_m">Guess Your Like</div>
+							<p>猜你喜欢</p>
+						</div>
+					</div>
+					<div class="cart_behavior">
+						<div class="cart_prev"></div>
+						<div class="cart_next"></div>
+						<div class="listlike">
+							<ul class="listlike_1">
+								<!--<li>
+									<div class="likeimg">
+										<img src="../img/bao9.jpg"/>
+									</div>
+									<p>Neil Barrett 尼奥·贝奈特</p>
+									<p>羊毛混纺 男士 休闲裤</p>
+									<p>￥2725.00</p>
+									<span>
+										添加到购物袋
+									</span>
+								</li>-->
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!-------------------------尾部---------------------->
+		<div id="footer">
+			<div class="footer_inner">
+			</div>
+
+			<div class="p_footer">
+				<div class="p_footer_c clearfix">
+					<div class="help_intro clearfix">
+						<ul>
+							<li class="footer_t">购物指南</li>
+							<li>
+								<a href="/services/shoppingGuide.html" title="购物流程" target="_blank">购物流程</a>
+							</li>
+							<li>
+								<a href="/services/shipping.html" title="配送方式" target="_blank">配送方式</a>
+							</li>
+						</ul>
+						<ul>
+							<li class="footer_t">支付方式</li>
+							<li>
+								<a href="/services/payOnline.html" title="如何付款" target="_blank">如何付款</a>
+							</li>
+							<li>
+								<a href="/services/receipt.html" title="发票制度" target="_blank">发票制度</a>
+							</li>
+						</ul>
+						<ul>
+							<li class="footer_t">商品说明</li>
+							<li>
+								<a href="/services/clothSize.html" title="商品尺码" target="_blank">商品尺码</a>
+							</li>
+							<li>
+								<a href="/services/Packing.html" title="商品包装" target="_blank">商品包装</a>
+							</li>
+						</ul>
+						<ul>
+							<li class="footer_t">客服中心</li>
+							<li>
+								<a href="/services/service.html" title="七天退换" target="_blank">七天退换</a>
+							</li>
+							<li>
+								<a href="/services/FAQ.html" title="常见问题" target="_blank">常见问题</a>
+							</li>
+						</ul>
+					</div>
+					<div class="service_phone">
+						<span class="footer_t">客服电话</span>
+						<h5>4000-250-630</h5>
+						<p>工作日 08:30-21:30</p>
+						<p>节假日 10:00-18:00</p>
+					</div>
+					<div class="foot_subscription">
+						<p class="foot_subscription_t">订阅美西杂志</p>
+						<input class="foot_subscription_m" id="rssIn" type="text" value="" placeholder="E-mail">
+						<div class="foot_subscription_b">;
+		">即刻订阅</div>
+					</div>
+					<div class="download_main">
+						<div class="float_l download_app">
+							<span class="footer_t">美西APP</span>
+							<div><span class="app_img"></span></div>
+						</div>
+						<div class="float_r wechat">
+							<span class="footer_t">官方微信</span>
+							<div>
+								<span class="wechat_img"></span>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<p>手机扫码即可下载美西APP或关注官方微信 </p>
+					</div>
+				</div>
+
+			</div>
+			<div class="pw_footer">
+				<div class="pw_footer_top">
+					<ul>
+						<li>
+							<div class="footer_icon03"></div>
+							<span>100%正品保证</span>
+						</li>
+						<li class="pw_footer_m">
+							<div class="footer_icon02">
+
+							</div>
+							<span>7天无忧退货</span>
+						</li>
+						<li>
+							<div class="footer_icon01"></div>
+							<span>九年专注，品质保障</span>
+						</li>
+					</ul>
+				</div>
+				<div class="pw_footer_cut"></div>
+				<div class="pw_footer_btm clearfix">
+					<div class="float_l pw_footer_btm_l">
+						<ul>
+							<li style="border-left: none;">
+								<a href="/services/media.html" title="媒体报道" target="_blank">媒体报道</a>
+							</li>
+							<li>
+								<a href="/services/qualityAssurance.html" title="正品保证" target="_blank">正品保证</a>
+							</li>
+							<li>
+								<a href="/services/coop.html" title="业务合作" target="_blank">业务合作</a>
+							</li>
+							<li>
+								<a href="/services/privacy.html" title="隐私声明" target="_blank">隐私声明</a>
+							</li>
+							<li>
+								<a href="/services/join.html" title="加入美西" target="_blank">加入美西</a>
+							</li>
+							<li>
+								<a href="/services/contacts.html" title="联系我们" target="_blank">联系我们</a>
+							</li>
+						</ul>
+						<div class="clear"></div>
+						<div>
+							<p>Copyright ©2008-2017，美西-高端时尚生活电商</p>
+						</div>
+						<div><span>沪ICP备09001221号</span><span>沪公网安备11010802017116号</span></div>
+					</div>
+					<div class="footer_btm_cut float_l"></div>
+					<div class="float_r pw_footer_btm_r">
+						<div><span>合作支持</span></div>
+						<ul class="clearfix">
+							<li class="partner_01" style="padding-top:5px;">
+								<a href="https://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=dov73ne26zbqpz06h12ypxbndnhhch3lzn" target="_blank"></a>
+							</li>
+							<li class="partner_03" style="padding-top:6px;">
+								<a class="clearfix" href="http://cn.unionpay.com" target="_blank"><span style="margin-right: 4px;"></span><i class="float_l">银联特约商户</i></a>
+							</li>
+							<li class="partner_02" style="padding-top:5px;">
+								<a href="http://v.qq.com/fashion/" target="_blank"></a>
+							</li>
+							<li class="partner_04">
+								<a href="http://d1.sina.com.cn/minisite/meixi/index.html" target="_blank"></a>
+							</li>
+							<li class="partner_05" style="padding-top:4px;">
+								<a href="http://women.sohu.com/20090318/n262873311.shtml" target="_blank"></a>
+							</li>
+							<li class="partner_06" style="padding-right: 0;padding-top: 4px;">
+								<a href="http://www.haibao.com" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!------------------------------------------>
+		<div class="consult">
+			<ul class="clearfix">
+				<li class="partner1" style="padding-top:5px;">
+					<a href="javascript:;"></a>
+					<div class="ewm">
+						<img src="../img/down_app.png" />
+						<span id="fuhao"></span>
+					</div>
+				</li>
+				<li class="partner2" style="padding-top:6px;">
+					<a class="clearfix" href="javascript:;"></a>
+				</li>
+				<li class="partner3" style="padding-top:5px;">
+					<a href="http://wpa.qq.com/msgrd?v=3&uin=461821624&site=qq&menu=yes" target="_blank"></a>
+				</li>
+				<li class="partner4">
+					<a href="javascript:;" target="_blank"></a>
+				</li>
+
+			</ul>
+		</div>
+		<div id="saoyisao">
+			<div class="weixin_header">
+				<span>分享到微信朋友圈</span>
+				<a href="javascript:;" onclick="return false;" class="bd_weixin_popup_close">×</a>
+			</div>
+			<div class="weixin_bg">
+				<img src="../img/1501205162.png" />
+			</div>
+			<div class="bd_weixin_popup_foot">
+				打开微信，点击底部的“发现”，<br>使用“扫一扫”即可将网页分享至朋友圈。
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/login.js"></script>
+		<script type="text/javascript">
+			
+			onload = function(){
+				
+				
+				
+				denglu();
+				
+			}
+		
+
+		</script>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+	</head>
+	<body>
+		<div id="header" class="header">
+			<div style="width: 100%;background: #fff;">
+			    <div class="member_header c_gray_3">
+			        <a href="/" title="美西"><div class="float_l member_nav_left"></div></a>
+			        <div class="float_r member_nav_right">
+			            <div class="member_help">需要帮助？</div><div><span class="member_phone hico01"></span>4000-250-630</div>
+			        	</div>
+			        <div class="clear"></div>
+			    </div>
+			</div>
+			<div class="headerShadow"></div>
+			
+			
+		</div>
+		<div class="memberMain">
+			<div id="login_form" class="login_form">
+		    	<form class="form-horizontal" role="form" method="post">
+		            <div class="member_m">
+		            	<div class="member_title">登录美西</div>
+		                <div class="member_li clearfix">
+		                    <div class="memberico01 float_l"></div>
+		                    <div class="memberint float_l">
+		                        <input name="account" class="form-control" type="text" placeholder="请输入手机号或邮箱" onblur="member_index.checkaccount()" validate-title="帐号">
+		                    </div>
+		                </div>
+		                <div class="member_li clearfix">
+		                    <div class="memberico02 float_l"></div>
+		                    <div class="memberint float_l">
+		                        <input name="password" class="form-control" type="password" placeholder="请输入密码" validate-title="密码">
+		                    </div>
+		                </div>
+		                <div class="verify_li clearfix" id="login_verify" style="display: none;">
+		                	<div class="verifyInt float_l">
+		                        <!--<input name="verify" class="form-control" type="text" placeholder="请输入验证码" onblur="member_index.checkverify()" validate-title="验证码">-->
+		                        <input name="verify" class="form-control" type="text" placeholder="请输入验证码" validate-title="验证码">
+		                    </div>
+		                    <div class="all_img float_r">
+		                        <img src="/member/index/code" class="verifyImg" border="0" alt="点击刷新验证码" onclick="member_index.fleshVerify($(this))">
+		                    </div>
+		                </div>
+		                <div class="m_opt clearfix">
+		                    <span class="float_l"><label for="login_auto"><input id="login_auto" checked="checked" type="checkbox"><span>自动登录</span></label></span>
+		                    <a class="float_r" href="/member/index/forgetPassword.html" target="_blank">忘记密码？</a>
+		                </div>
+		                <div class="men_err_msg">
+		                </div>
+		                <div class="member_form_btn">
+		                	<button type="button">登录</button>
+		                </div>
+		                <div class="m_t"><a class="acclink" href="register.html">立即注册</a></div>
+		            </div>
+		        </form>
+		    </div>
+		</div>
+		<div class="pw_footer">
+				<div class="pw_footer_top">
+					<ul>
+						<li>
+							<div class="footer_icon03"></div>
+							<span>100%正品保证</span>
+						</li>
+						<li class="pw_footer_m">
+							<div class="footer_icon02">
+
+							</div>
+							<span>7天无忧退货</span>
+						</li>
+						<li>
+							<div class="footer_icon01"></div>
+							<span>九年专注，品质保障</span>
+						</li>
+					</ul>
+				</div>
+				<div class="pw_footer_cut"></div>
+				<div class="pw_footer_btm clearfix">
+					<div class="float_l pw_footer_btm_l">
+						<ul>
+							<li style="border-left: none;">
+								<a href="/services/media.html" title="媒体报道" target="_blank">媒体报道</a>
+							</li>
+							<li>
+								<a href="/services/qualityAssurance.html" title="正品保证" target="_blank">正品保证</a>
+							</li>
+							<li>
+								<a href="/services/coop.html" title="业务合作" target="_blank">业务合作</a>
+							</li>
+							<li>
+								<a href="/services/privacy.html" title="隐私声明" target="_blank">隐私声明</a>
+							</li>
+							<li>
+								<a href="/services/join.html" title="加入美西" target="_blank">加入美西</a>
+							</li>
+							<li>
+								<a href="/services/contacts.html" title="联系我们" target="_blank">联系我们</a>
+							</li>
+						</ul>
+						<div class="clear"></div>
+						<div>
+							<p>Copyright ©2008-2017，美西-高端时尚生活电商</p>
+						</div>
+						<div><span>沪ICP备09001221号</span><span>沪公网安备11010802017116号</span></div>
+					</div>
+					<div class="footer_btm_cut float_l"></div>
+					<div class="float_r pw_footer_btm_r">
+						<div><span>合作支持</span></div>
+						<ul class="clearfix">
+							<li class="partner_01" style="padding-top:5px;">
+								<a href="https://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=dov73ne26zbqpz06h12ypxbndnhhch3lzn" target="_blank"></a>
+							</li>
+							<li class="partner_03" style="padding-top:6px;">
+								<a class="clearfix" href="http://cn.unionpay.com" target="_blank"><span style="margin-right: 4px;"></span><i class="float_l">银联特约商户</i></a>
+							</li>
+							<li class="partner_02" style="padding-top:5px;">
+								<a href="http://v.qq.com/fashion/" target="_blank"></a>
+							</li>
+							<li class="partner_04">
+								<a href="http://d1.sina.com.cn/minisite/meixi/index.html" target="_blank"></a>
+							</li>
+							<li class="partner_05" style="padding-top:4px;">
+								<a href="http://women.sohu.com/20090318/n262873311.shtml" target="_blank"></a>
+							</li>
+							<li class="partner_06" style="padding-right: 0;padding-top: 4px;">
+								<a href="http://www.haibao.com" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>
